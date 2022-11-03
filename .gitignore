@@ -1,0 +1,25 @@
+.metadata/
+.vscode/
+bin/
+
+# Compilados y demás
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+nbproject/Package-*.bash
+.nb-gradle/
+nbbuild/
+nbdist/
+build/
+**/dist/*
+**/dist/lib/*
+
+# Excepciones (Librerias Globales importadas)
+!**/dist/lib
+
+# FormValidationAPI
+# Salen de Netbeans 15 (Directorio de instalación)
+# - ide/modules/ext/   ValidationAPI.jar
+# - platform/lib/      org-openide-util*.jar
+!**/dist/lib/ValidationAPI.jar
+!**/dist/lib/org-openide-util.jar
+!**/dist/lib/org-openide-util-lookup.jar
